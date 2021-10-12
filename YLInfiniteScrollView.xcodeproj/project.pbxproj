@@ -7,15 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5716BAD12715077C00768CD5 /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 5716BACD2715077C00768CD5 /* 4.png */; };
+		5716BAD22715077C00768CD5 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 5716BACE2715077C00768CD5 /* 2.png */; };
+		5716BAD32715077C00768CD5 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 5716BACF2715077C00768CD5 /* 3.png */; };
+		5716BAD42715077C00768CD5 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 5716BAD02715077C00768CD5 /* 1.png */; };
+		5716BAD627152C1500768CD5 /* NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5716BAD527152C1500768CD5 /* NextViewController.swift */; };
 		573D55C4271444520048288B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573D55C3271444520048288B /* AppDelegate.swift */; };
 		573D55C6271444520048288B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573D55C5271444520048288B /* SceneDelegate.swift */; };
 		573D55C8271444520048288B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573D55C7271444520048288B /* ViewController.swift */; };
 		573D55CB271444520048288B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 573D55C9271444520048288B /* Main.storyboard */; };
 		573D55CD271444530048288B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 573D55CC271444530048288B /* Assets.xcassets */; };
 		573D55D0271444530048288B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 573D55CE271444530048288B /* LaunchScreen.storyboard */; };
+		573D55D8271444790048288B /* YLInfiniteScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573D55D7271444790048288B /* YLInfiniteScrollView.swift */; };
+		573D55DB271448D10048288B /* YLInfiniteScrollCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573D55D9271448D10048288B /* YLInfiniteScrollCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5716BACD2715077C00768CD5 /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
+		5716BACE2715077C00768CD5 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		5716BACF2715077C00768CD5 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
+		5716BAD02715077C00768CD5 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		5716BAD527152C1500768CD5 /* NextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextViewController.swift; sourceTree = "<group>"; };
 		573D55C0271444520048288B /* YLInfiniteScrollView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YLInfiniteScrollView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		573D55C3271444520048288B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		573D55C5271444520048288B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +36,8 @@
 		573D55CC271444530048288B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		573D55CF271444530048288B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		573D55D1271444530048288B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		573D55D7271444790048288B /* YLInfiniteScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLInfiniteScrollView.swift; sourceTree = "<group>"; };
+		573D55D9271448D10048288B /* YLInfiniteScrollCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLInfiniteScrollCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,10 +73,17 @@
 				573D55C3271444520048288B /* AppDelegate.swift */,
 				573D55C5271444520048288B /* SceneDelegate.swift */,
 				573D55C7271444520048288B /* ViewController.swift */,
+				5716BAD527152C1500768CD5 /* NextViewController.swift */,
+				573D55D7271444790048288B /* YLInfiniteScrollView.swift */,
+				573D55D9271448D10048288B /* YLInfiniteScrollCell.swift */,
 				573D55C9271444520048288B /* Main.storyboard */,
 				573D55CC271444530048288B /* Assets.xcassets */,
 				573D55CE271444530048288B /* LaunchScreen.storyboard */,
 				573D55D1271444530048288B /* Info.plist */,
+				5716BAD02715077C00768CD5 /* 1.png */,
+				5716BACE2715077C00768CD5 /* 2.png */,
+				5716BACF2715077C00768CD5 /* 3.png */,
+				5716BACD2715077C00768CD5 /* 4.png */,
 			);
 			path = YLInfiniteScrollView;
 			sourceTree = "<group>";
@@ -124,8 +145,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5716BAD42715077C00768CD5 /* 1.png in Resources */,
 				573D55D0271444530048288B /* LaunchScreen.storyboard in Resources */,
 				573D55CD271444530048288B /* Assets.xcassets in Resources */,
+				5716BAD12715077C00768CD5 /* 4.png in Resources */,
+				5716BAD32715077C00768CD5 /* 3.png in Resources */,
+				5716BAD22715077C00768CD5 /* 2.png in Resources */,
 				573D55CB271444520048288B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,8 +162,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				573D55DB271448D10048288B /* YLInfiniteScrollCell.swift in Sources */,
+				5716BAD627152C1500768CD5 /* NextViewController.swift in Sources */,
 				573D55C8271444520048288B /* ViewController.swift in Sources */,
 				573D55C4271444520048288B /* AppDelegate.swift in Sources */,
+				573D55D8271444790048288B /* YLInfiniteScrollView.swift in Sources */,
 				573D55C6271444520048288B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
