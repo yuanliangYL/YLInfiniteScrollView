@@ -11,12 +11,10 @@
 
 import UIKit
 
-
 protocol YLInfiniteScrollViewDelegate {
-
     func didSelectedRow(indexpath: IndexPath)
-
 }
+
 
 class YLInfiniteScrollView: UIView {
 
@@ -24,15 +22,18 @@ class YLInfiniteScrollView: UIView {
 
     // MARK: -- lazy
     lazy var pageControll: UIPageControl = {
+
         let pagecontroll = UIPageControl()
         pagecontroll.backgroundColor = UIColor.clear
         pagecontroll.currentPage = 0
         pagecontroll.currentPageIndicatorTintColor = .yellow
         pagecontroll.tintColor = .gray
         return pagecontroll
+
     }()
 
     lazy var scrollCollectionView:UICollectionView  = {
+
         let flowlayout = UICollectionViewFlowLayout()
         flowlayout.itemSize = self.frame.size
         flowlayout.minimumLineSpacing = 0
@@ -48,8 +49,8 @@ class YLInfiniteScrollView: UIView {
         scrollPage.isPagingEnabled = true
         scrollPage.register(YLInfiniteScrollCell.self, forCellWithReuseIdentifier:  NSStringFromClass(YLInfiniteScrollCell.self))
         scrollPage.bounces = false
-
         return scrollPage
+
     }()
 
     var scrollInterval: TimeInterval = 3.0
@@ -79,10 +80,10 @@ class YLInfiniteScrollView: UIView {
             if imagesData.count != 0{
                 let first = imagesData.first!
                 let last = imagesData.last!
-
                 imagesData.append(first)
                 imagesData.insert(last, at: 0)
             }
+
             scrollCollectionView.reloadData()
             //初始滚动到第二页
             scrollCollectionView.setContentOffset(CGPoint(x: UIScreen.main.bounds.width, y: 0), animated: false)
@@ -95,9 +96,15 @@ class YLInfiniteScrollView: UIView {
         self.addSubview(scrollCollectionView)
         self.addSubview(pageControll)
 
-        //定时器赋值
-        timer = Timer.scheduledTimer(timeInterval: scrollInterval, target: self, selector: #selector(scrollViewByTime), userInfo: nil, repeats: true)
-        timer?.fireDate = NSDate.distantFuture//不激活
+        //定时器赋值:默认添加的方式在翻动是定时器无起作用
+//        timer = Timer.scheduledTimer(timeInterval: scrollInterval, target: self, selector: #selector(scrollViewByTime), userInfo: nil, repeats: true)
+
+        timer = Timer.init(timeInterval: scrollInterval, target:self, selector:  #selector(scrollViewByTime), userInfo: nil, repeats: true)
+        if let time =  timer{
+            RunLoop.current.add(time, forMode: .common)
+            time.fireDate = NSDate.distantFuture//不激活
+        }
+
     }
 
     override func layoutSubviews() {
