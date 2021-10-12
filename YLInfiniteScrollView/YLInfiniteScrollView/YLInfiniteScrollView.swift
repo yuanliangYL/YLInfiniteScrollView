@@ -98,7 +98,6 @@ class YLInfiniteScrollView: UIView {
 
         //定时器赋值:默认添加的方式在翻动是定时器无起作用
 //        timer = Timer.scheduledTimer(timeInterval: scrollInterval, target: self, selector: #selector(scrollViewByTime), userInfo: nil, repeats: true)
-
         timer = Timer.init(timeInterval: scrollInterval, target:self, selector:  #selector(scrollViewByTime), userInfo: nil, repeats: true)
         if let time =  timer{
             RunLoop.current.add(time, forMode: .common)
